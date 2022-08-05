@@ -9,8 +9,8 @@ html{
 .navbar{
     display: flex;
     align-items: center;
-    position: sticky;
     top: 0px;
+    z-index: 2;
 }
 .navbar::before{
     content: " ";
@@ -94,9 +94,7 @@ ul{
 }
 
 #services-center{
- /* margin-top: 1px; */
  position: relative;
- z-index: -1;
 }
 #services-center::before{
     content: " ";
@@ -135,10 +133,8 @@ ul{
 }
 
 #clientSection{
-    /* margin: 1px; */
     position: relative;
     height: 200px;
-    z-index: -1;
 }
 #clientSection::before{
     content: " ";
@@ -146,7 +142,7 @@ ul{
     background: url(../images/image.jpg);
     height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.4;
 }
 
